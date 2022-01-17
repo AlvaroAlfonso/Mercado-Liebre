@@ -24,6 +24,6 @@ app.get ("/login", (req,res) =>{
 app.post ("/login", (req,res) =>{
     res.sendFile(path.resolve(__dirname, "./views/login.html"))
 })
-app.listen (3001, ()=>{
-    console.log("Corriendo en el serivor 3001")
+app.listen (process.env.PORT || 3000, ()=>{
+    console.log("Corriendo en el puerto 3000")
 })

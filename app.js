@@ -25,5 +25,5 @@ app.post ("/login", (req,res) =>{
     res.sendFile(path.resolve(__dirname, "./views/login.html"))
 })
 app.listen (process.env.PORT || 3000, ()=>{
-    console.log("Corriendo en el puerto 3000")
+    console.log("Servidor Corriendo en Puerto: 3000")
 })
